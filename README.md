@@ -42,7 +42,7 @@ O token é armazenado no `localStorage` e enviado nas requisições protegidas.
 
 ## ⚙️ Backend necessário
 
-Este frontend depende de uma API REST construída com FastAPI + PostgreSQL.
+Este frontend depende de uma API construída com FastAPI + PostgreSQL.
 
 ## 📌 Observações
 
