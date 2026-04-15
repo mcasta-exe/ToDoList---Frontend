@@ -1,0 +1,104 @@
+body {
+    background-color: #bec1e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* correto manter */
+}
+
+.tasks-container {
+    display:flex;
+    gap: 30px;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#tasks {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 40px;
+}
+
+#login-box, #cadastro-box, #criar-task, #listar-task{
+    background-color: white;   /* fundo branco */
+    padding: 40px;             /* espaço interno entre o conteúdo e a borda */
+    border-radius: 8px;        /* arredonda os cantos */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra embaixo */
+}
+
+#criar-task, #listar-task {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#listar-task {
+    width: 400px;
+    height: 100%;       
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(180, 222, 222);
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.logout-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 10%;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#mensagem{
+    color: green;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
