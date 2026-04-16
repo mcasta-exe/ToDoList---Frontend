@@ -27,6 +27,9 @@ botaoCadastro.addEventListener("click", function(){
         console.log(data)
         const msgOK = document.getElementById("mensagem")
         msgOK.textContent = "Usuário criado com Sucesso!"
-        window.location.href = "index.html"
+        setTimeout(function(){
+            window.location.href = "index.html"
+                }, 2000)
     })
 })
+
